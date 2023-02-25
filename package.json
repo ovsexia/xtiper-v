@@ -1,0 +1,13 @@
+{
+  "name": "xtiper-v",
+  "version": "1.0.0",
+  "description": "Web notification and messaging solutions.",
+  "main": "index.js",
+  "homepage": "https://github.com/ovsexia/xtiper-v",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack"
+  },
+  "author": "ovsexia",
+  "license": "MIT"
+}

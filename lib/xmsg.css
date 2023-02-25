@@ -1,0 +1,19 @@
+.xtiper_vmid {vertical-align:middle; display:inline-block;}
+.xtiper_svg {margin-right:5px; width:20px; height:20px; transform:translateY(-1px);}
+.xtiper_svg svg {display:block; vertical-align:top; width:20px; height:20px;}
+.xtiper_msg, .xtiper_msg_in {transition-duration:0.2s; transition-timing-function:ease-out; transition-property:transform,opacity;}
+.xtiper_msg {max-width:90%; position:fixed; left:50%; transform:translate(-50%, -50%)}
+.xtiper_msg_in {height:50px; line-height:50px; font-size:14px; border-radius:3px; overflow:hidden; z-index:99999; opacity:0; box-shadow:0 0 10px rgba(0,0,0,0.2);}
+.xtiper_msg_black .xtiper_msg_in {background-color:rgba(0,0,0,0.75); color:#fff;}
+.xtiper_msg_white .xtiper_msg_in {background-color:rgba(255,255,255,0.95); color:#222;}
+.xtiper_msg_middle {top:50%;}
+.xtiper_msg_middle .xtiper_msg_in {transform:scale(0,0);}
+.xtiper_msg_top {transform:translate(-50%, -100%); top:0;}
+.xtiper_msg_top .xtiper_msg_in {transform:scale(1, 1);}
+.xtiper_msg_bottom {transform:translate(-50%, 100%); bottom:0;}
+.xtiper_msg_bottom .xtiper_msg_in {transform:scale(1, 1);}
+.xtiper_msg_in p {padding:0 24px; white-space:nowrap;}
+.xtiper.xon .xtiper_msg .xtiper_msg_in {opacity:1;}
+.xtiper.xon .xtiper_msg_middle .xtiper_msg_in {transform:scale(1,1);}
+.xtiper.xon .xtiper_msg_top {transform:translate(-50%, 0);}
+.xtiper.xon .xtiper_msg_bottom {transform:translate(-50%, 0);}
