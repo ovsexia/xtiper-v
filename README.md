@@ -1,7 +1,10 @@
 # Xtiper-v
 
+### 安装
+`npm i xtiper-v`
+
 ### 使用方法
-`import { xmsg, xwin, xalert, xconfirm } from '../xtiper/index.js'`（路径修改）
+`import { xmsg, xwin, xalert, xconfirm } from 'xtiper-v'`
 
 ### 调用
 1. 短消息
