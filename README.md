@@ -4,7 +4,7 @@
 `npm i xtiper-v`
 
 ### 使用方法
-`import { xmsg, xwin, xalert, xconfirm } from 'xtiper-v'`
+`import { xmsg, xwin, xalert, xconfirm, xsheet, xload } from 'xtiper-v'`
 
 ### 调用
 1. 短消息
@@ -77,6 +77,45 @@ xwin({
   btn2: null,                                //按钮2回调函数
   btn3: null,                                //按钮3回调函数
   btn4: null,                                //按钮4回调函数
-  zindex: 99999,
+  zindex: 99999,                             //叠层顺序
 });
  ```
+
+----
+
+4.面板
+```
+xsheet({
+  title: '',        //标题
+  align: 'center',  //文字对齐
+  pos: 'bottom',    //位置
+  times: 0,         //自动关闭时间（秒数）
+  btn: [],          //按钮文字
+  btn1: null,       //按钮1回调函数
+  btn2: null,       //按钮2回调函数
+  btn3: null,       //按钮3回调函数
+  btn4: null,       //按钮4回调函数
+  btn5: null,       //按钮5回调函数
+  btn6: null,       //按钮6回调函数
+  btn7: null,       //按钮7回调函数
+  btn8: null,       //按钮8回调函数
+  force: false,     //是否启用强制选择
+  forceCall: null,  //强制选择提示函数
+  btnClose: '',     //关闭按钮文字
+  html: '',         //自定义内容的 html 代码
+  end: null,        //关闭后的回调函数
+  zindex: 99999,    //叠层顺序
+});
+```
+
+----
+
+```
+5.加载
+xload({
+  title: '',      //标题
+  times: 0,       //自动关闭时间（秒数）
+  end: null,      //关闭后的回调函数
+  zindex: 99999,  //叠层顺序
+});
+```

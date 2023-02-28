@@ -1,0 +1,26 @@
+.xtiper_sheet {width: 100%; height: 100%; bottom: 0; left: 0; position: fixed;}
+.xtiper_sheet_in {background-color: #fff; transition: 0.2s ease-in; transition-property: transform; transform: translate(0, 100%); z-index: 2; position: absolute;}
+.xtiper_sheet_in_top {width: 100%; top: 0; transform: translateY(-100%);}
+.xtiper_sheet_in_bottom {width: 100%; bottom: 0; transform: translateY(100%);}
+.xtiper_sheet_in_left {transform: translateX(-100%);}
+.xtiper_sheet_in_right {transform: translateX(100%);}
+.xtiper_sheet_in_left, .xtiper_sheet_in_right {width: 50%; height: 100%; top: 0; right: 0;}
+.xtiper_sheet_ul, .xtiper_sheet_tit {background-color: #efeff4;}
+.xtiper.xon .xtiper_sheet_in {transform: translate(0, 0);}
+.xtiper.xon .xtiper_sheet .xtiper_bg {background-color: rgba(0, 0, 0, 0.5); opacity: 1;}
+.xtiper_sheet_left {text-align: left;}
+.xtiper_sheet_right {text-align: right;}
+.xtiper_sheet_center {text-align: center;}
+.xtiper_sheet_tit {padding: 15px; font-size: 15px; color: #222; line-height: 20px; font-weight: bold;}
+.xtiper_sheet_ul {padding: 0; margin: 0;}
+.xtiper_sheet_li {background-color: #fff; border-top: 1px solid #d9d9d9; cursor: pointer; user-select: none; -ms-user-select: none; list-style: none;}
+.xtiper_sheet_li_p {font-size: 14px; height: 48px; line-height: 48px; color: #222; padding: 0 15px; margin: 0;}
+.xtiper_sheet_li_p a {display: block; width: 100%; color: #222; text-decoration: none;}
+.xtiper_sheet_li_p a:hover {color: #222; text-decoration: none;}
+.xtiper_sheet_li_last {margin-top: 8px; border-top: 0;}
+.xtiper_sheet_li_p .xtiper_close, .xtiper_sheet_li_p p {float: none; display: inline-block; vertical-align: middle;}
+.xtiper_sheet_li_p p {margin: 0; padding: 0;}
+.xtiper_sheet_li_last .xtiper_sheet_li_p .xtiper_close {transform: translateX(-10px);}
+.xtiper_sheet_li_last .xtiper_sheet_li_p p {transform: translateX(-15px);}
+.xtiper_sheet_right .xtiper_sheet_li_last .xtiper_sheet_li_p .xtiper_close {transform: translateX(5px);}
+.xtiper_sheet_right .xtiper_sheet_li_last .xtiper_sheet_li_p p {transform: translateX(0);}

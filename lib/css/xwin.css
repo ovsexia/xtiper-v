@@ -1,10 +1,8 @@
-.xtiper_bg {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; background-color: rgba(0, 0, 0, 0.6); transition-duration: 0.2s; transition-timing-function: ease-in; transition-property: opacity; opacity: 0;}
 .xtiper_win {position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .xtiper_win_ani {transition-duration: 0.2s; transition-timing-function: ease-in; transition-property: transform; transform: scale(0, 0); background-color: #fff; box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);}
 .xtiper_win_shade {width: 100%; height: 100%; top: 0; left: 0; transform: translate(0, 0);}
 .xtiper_win_in {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;}
 .xtiper.xon .xtiper_win .xtiper_bg {background-color: rgba(0, 0, 0, 0.5); opacity: 1;}
-.xtiper.xon .xtiper_win .xtiper_bg_white {background-color: rgba(255, 255, 255, 0.5);  transition: 0.05s ease-in;}
 .xtiper.xon .xtiper_win_ani {transform: scale(1, 1);}
 
 .xtiper_tit {height: 40px; line-height: 40px; color: #222; font-size: 14px; background-color: #f8f8f8; padding: 0 18px; position: relative; user-select: none; cursor: move;}
@@ -14,23 +12,11 @@
 .xtiper_tit p {text-overflow: ellipsis; overflow: hidden; white-space: nowrap; margin-right: 28px;}
 .xtiper_tit.xmin p {margin-right: 62px;}
 
-.xtiper_minmax {position: absolute; top: 5px; right: 6px;}
-.xtiper_close {z-index: 10;}
-.xtiper_close, .xtiper_min, .xtiper_max {width: 30px; height: 30px; cursor: pointer; box-sizing: border-box; margin-right: 4px; float: left; background-size: 18px; background-repeat: no-repeat; background-position: center center; position: relative;}
-.xtiper_minmax div:last-child {margin-right: 0;}
-.xtiper_close:before, .xtiper_close:after {content: ""; display: block; width: 14px; height: 2px; background-color: #2d2c3b; position: absolute; top: 14px; left: 8px;}
-.xtiper_close:before {transform: rotate(45deg);}
-.xtiper_close:after {transform: rotate(-45deg);}
-.xtiper_close:before, .xtiper_close:after {transition-duration: 0.2s; transition-timing-function: ease-in; transition-property: transform;}
-.xtiper_close_notit {margin-right: 0; background-color: #333; border: 3px solid #fff; position: absolute; top: -10px; right: -10px; border-radius: 50%; transition-duration: 0.2s; transition-timing-function: ease-in; transition-property: background-color;}
-.xtiper_close_notit:before, .xtiper_close_notit:after {background-color: #fff; top: 11px; left: 5px;}
-.xtiper_close_notitmin:before, .xtiper_close_notitmin:after {top: 7px; left: 3px; width: 10px;}
-.xtiper_close_notitmin {width: 20px; height: 20px; border-width: 2px}
-
 .xtiper_pad {padding: 15px;}
 .xtiper_pr {position: relative;}
 .xtiper_tip {font-size: 14px; line-height: 20px; min-height: 60px; overflow: hidden;}
-.xtiper_btn ul {text-align: center; display: flex; overflow: hidden; border-top: 1px solid #eaeaea; background-color: #fff;}
+.xtiper_btn {overflow: hidden;}
+.xtiper_btn ul {text-align: center; display: flex; overflow: hidden; border-top: 1px solid #eaeaea; background-color: #fff; margin: 0; padding: 0;}
 .xtiper_btn ul:after {content: ""; display: block; clear: both;}
 .xtiper_btn li {float: left; overflow: hidden; position: relative;}
 .xtiper_btn li:after {content: ""; display: block; width: 1px; height: 40px; overflow: hidden; position: absolute; top: 0; right: 0; background-color: #eaeaea;}
@@ -39,16 +25,18 @@
 .xtiper_btn2 li {width: 50%;}
 .xtiper_btn3 li {width: 33.3%; -webkit-box-flex: 1; -ms-flex: 1; flex: 1;}
 .xtiper_btn4 li {width: 25%; -webkit-box-flex: 1; -ms-flex: 1; flex: 1;}
-.xtiper_btn li button {width: 100%; height: 40px; background-color: #fff; cursor: pointer; color: #222; font-size: 14px; border: 0;}
+.xtiper_btn li button {width: 100%; height: 40px; background-color: #fff; cursor: pointer; color: #222; font-size: 14px; border: 0; border-radius: 0; margin: 0; font-weight: normal; padding: 0; outline: 0;}
+.xtiper_btn li button:focus {outline: 0;}
 .xtiper_btn li.xactive button {color: #fff;}
 .xtiper_btn li.xactive button {background-color: #a8a8a8;}
 .xtiper_btn_success li.xactive button, .xtiper_btn_hello li.xactive button, .xtiper_btn_success .xtiper_btnbor, .xtiper_btn_hello .xtiper_btnbor {background-color: #37b72c;}
 .xtiper_btn_error li.xactive button, .xtiper_btn_error .xtiper_btnbor {background-color: #e75445;}
-.xtiper_btn_warning li.xactive button, .xtiper_btn_ask li.xactive button, .xtiper_btn_warning .xtiper_btnbor, .xtiper_btn_ask .xtiper_btnbor {background-color: #f89310;}
+.xtiper_btn_warning li.xactive button, .xtiper_btn_warning .xtiper_btnbor {background-color: #f89310;}
+.xtiper_btn_ask li.xactive button, .xtiper_btn_ask .xtiper_btnbor {background-color: #2c82b9;}
 .xtiper_btn1 li.xactive button {background-color: #fff; color: #222;}
 .xtiper_btn li:last-child:after {display: none;}
-.xtiper_btnbor {width: 100%; height: 4px; overflow: hidden; background-color: #c3c3c3; position: relative;}
-.xtiper_btnbor:after {content: ""; display: block; width: 100%; height: 4px; background-color: rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 0;}
+.xtiper_btnbor {width: 100%; height: 5px; overflow: hidden; background-color: #c3c3c3; position: relative;}
+.xtiper_btnbor:after {content: ""; display: block; width: 100%; height: 5px; background-color: rgba(0, 0, 0, 0.1); position: absolute; top: 0; left: 0;}
 .xtiper_btn1 .xtiper_btnbor:after {display: none;}
 .xtiper_btn2 li:nth-child(2) {opacity: 0.92;}
 .xtiper_btn3 li:nth-child(1) {opacity: 0.84;}
